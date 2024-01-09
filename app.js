@@ -18,18 +18,26 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
   var listItem=document.createElement("li");
+  listItem.classList.add("item");
 
   //input (checkbox)
   var checkBox=document.createElement("input");//checkbx
+  checkBox.classList.add("input");
+  checkBox.classList.add("checkbox");
   //label
   var label=document.createElement("label");//label
+  label.classList.add("label");
   //input (text)
   var editInput=document.createElement("input");//text
+  editInput.classList.add("input");
+  editInput.classList.add("text");
   //button.edit
   var editButton=document.createElement("button");//edit button
+  editButton.classList.add("button");
 
   //button.delete
   var deleteButton=document.createElement("button");//delete button
+  deleteButton.classList.add("button");
   var deleteButtonImg=document.createElement("img");//delete button image
   deleteButtonImg.classList.add("remove-img");
 
